@@ -8,3 +8,7 @@ def PrintAircraft (aircraft):
     print("Callsign: ", aircraft.callsign)
     print("Type: ", aircraft.type)
     print("Capacity: ", aircraft.capacity)
+
+# test section
+aircraft = Aircraft("AAAA","A220-100",135)
+PrintAircraft(aircraft)
