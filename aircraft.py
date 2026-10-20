@@ -61,7 +61,7 @@ if __name__ == "__main__":
     print("\nAircrafts saved to file.")
 
     # Test LoadAircrafts
-    loaded_aircrafts = LoadAircrafts("aircrafts.txt")
+    loaded_aircrafts = LoadAircrafts("Aircrafts.txt")
     print("\nLoaded aircrafts:")
     PrintAircrafts(loaded_aircrafts)
 
