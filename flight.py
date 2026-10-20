@@ -16,15 +16,17 @@ def PrintFlight (flight):
     print("Passangers: ", flight.Passangers)
 
 def TimeToMinutes (time):
-# Converts and returns time hh:mm to minuts counted from 00:00
+# Converts and returns time hh:mm to minutes counted from 00:00
     try:
-         h, m = time.split(":")
-         return int(h) * 60 + int(m)
+        parts = time.split(":")
+        hours = int(parts[0])
+        minutes = int(parts[1])
+        return hours * 60 + minutes
     except ValueError:
          return -1
 
 def FlightDuration (flight):
-# Returns the duration in minutes
+# Returns the duration of the flight in minutes
     departure = TimeToMinutes(flight.DepartureTime)
     arrival = TimeToMinutes(flight.ArrivalTime)
     duration = arrival - departure
